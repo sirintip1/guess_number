@@ -10,8 +10,7 @@ void main() {
   do {
     stdout.write('Please guess the number: ');
     var input = stdin.readLineSync(); //รับเข้ามาเป็น string ต้องเปลี่ยน
-     guess = int.tryParse(
-        input!); //string ถูกแปลงเป็น จำนวนเต็ม ในตัวแปร guess
+     guess = int.tryParse(input!); //string ถูกแปลงเป็น จำนวนเต็ม ในตัวแปร guess
     if (guess == null) {
       continue;
     } else {
